@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+body {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background: linear-gradient(130deg, #ffffff 0%, #7e8083 30%);
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sedgwick Ave Display", cursive;
+    background: -webkit-linear-gradient(#579486, #245E59);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #245E59;
+    -webkit-text-stroke-width: 0.2px;
+
+}
+
+p,
+a {
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 1.5rem;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.header__list__item {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+
+.header__toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+    .header__toggle {
+        display: block;
+        font-size: 30px;
+    }
+
+    .header__ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background-color: white;
+        border-bottom-left-radius: 30px;
+        height: 8em;
+        max-width: 6em;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__ul--open {
+        display: flex;
+    }
+}

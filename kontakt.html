@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodoukt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <script src="javascript/kontakt.js" defer></script>
+    <script src="javascript/js.js" defer></script>
+
+    <meta name="theme-color" content="#6fa79f" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.png">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="" alt="logo" class="header__logo"></a>
+        <nav class="header__nav">
+            <button class="header__toggle" type="button" aria-label="Ådn eller luk navigationen"
+                aria-expanded="false">☰</button>
+            <ul class="header__ul">
+                <li class="header__list__item"><a href="index.html">Forside</a></li>
+                <li class="header__list__item"><a href="info.html">Info</a></li>
+                <li class="header__list__item"><a href="kontakt.html">Kontakt os</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="kontakt">
+            <h1 class="kontakt__h1">Kontakt os</h1>
+            <form action="validate" method="post" id="form" class="form" novalidate>
+                <fieldset class="field">
+                    <input type="text" name="name" id="name" class="form__input placeholder" placeholder="Navn">
+                    <input type="email" name="email" id="email" class="form__input placeholder" placeholder="E-mail">
+                    <textarea name="feedback" id="feedback" class="form__textarea placeholder"
+                        placeholder="Feedback"></textarea>
+                    <textarea name="question" id="question" class="form__textarea placeholder"
+                        placeholder="Dit spørgsmål"></textarea>
+                </fieldset>
+
+                <fieldset class="field__btn">
+                    <button class="send__btn">Send</button>
+                </fieldset>
+                <div class="error__msg" id="errorMsg"></div>
+            </form>
+        </article>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

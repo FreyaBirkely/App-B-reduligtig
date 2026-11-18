@@ -1,0 +1,50 @@
+.kontakt {
+    max-width: 330px;
+    margin: auto;
+}
+
+.kontakt__h1 {
+    font-size: 25px;
+}
+
+.field,
+.field__btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    border: none;
+}
+
+.form__input {
+    border: 1px solid black;
+    max-width: 330px;
+    height: 56px;
+}
+
+.form__textarea {
+    max-width: 330px;
+    height: 100px;
+    border: 1px solid black;
+    padding-top: 15px;
+}
+
+.send__btn {
+    max-width: 80px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.placeholder {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.form__input--red__border {
+    border: 3px solid red;
+}
+
+.error__msg {
+    color: red;
+    font-size: 20px;
+    margin-top: 1rem;
+}

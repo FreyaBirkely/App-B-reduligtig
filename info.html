@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodoukt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/info.css">
+    <script src="javascript/js.js" defer></script>
+
+    <meta name="theme-color" content="#6fa79f" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.png">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="" alt="logo" class="header__logo"></a>
+        <nav class="header__nav">
+            <button class="header__toggle" type="button" aria-label="Ådn eller luk navigationen"
+                aria-expanded="false">☰</button>
+            <ul class="header__ul">
+                <li class="header__list__item"><a href="index.html">Forside</a></li>
+                <li class="header__list__item"><a href="info.html">Info</a></li>
+                <li class="header__list__item"><a href="kontakt.html">Kontakt os</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul class="info-main__ul">
+                <li class="info__list__item"><a href="#screen">Skærm</a></li>
+                <li class="info__list__item"><a href="#spaycan">Spaycan</a></li>
+                <li class="info__list__item"><a href="#floor">Gulv</a></li>
+            </ul>
+        </nav>
+        <section class="info" id="screen">
+            <img src="icons/icon-384x384.png" alt="">
+            <p class="info__text">The standard chunk of Lorem Ipsum used since 1966 is reproduced below for those
+                interested.
+                Sections 1.10.32 and 1.10.33
+                from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                accompanied by English
+                versions from the 1914 translation by H. Rackham.</p>
+        </section>
+
+        <section class="info" id="spaycan">
+            <img src="icons/icon-384x384.png" alt="">
+            <p class="info__text">The standard chunk of Lorem Ipsum used since 1966 is reproduced below for those
+                interested.
+                Sections 1.10.32 and 1.10.33
+                from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                accompanied by English
+                versions from the 1914 translation by H. Rackham.</p>
+        </section>
+
+        <section class="info" id="floor">
+            <img src="icons/icon-384x384.png" alt="">
+            <p class="info__text">The standard chunk of Lorem Ipsum used since 1966 is reproduced below for those
+                interested.
+                Sections 1.10.32 and 1.10.33
+                from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                accompanied by English
+                versions from the 1914 translation by H. Rackham.</p>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

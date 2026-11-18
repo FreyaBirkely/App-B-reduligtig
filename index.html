@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodoukt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="javascript/js.js" defer></script>
+
+    <meta name="theme-color" content="#6fa79f" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.png">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="" alt="logo" class="header__logo"></a>
+        <nav class="header__nav">
+            <button class="header__toggle" type="button" aria-label="Ådn eller luk navigationen"
+                aria-expanded="false">☰</button>
+            <ul class="header__ul">
+                <li class="header__list__item"><a href="index.html">Forside</a></li>
+                <li class="header__list__item"><a href="info.html">Info</a></li>
+                <li class="header__list__item"><a href="kontakt.html">Kontakt os</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produkt">
+            <h1 class="produkt__h1">Prodoukt navn</h1>
+            <div class="3d__model">
+                <model-viewer camera-controls touch-action="pan-y" disable-pan environment-image="media/360-image.hdr"
+                    skybox-image="media/360-image.hdr" skybox-height="0.05m" orientation="0deg -90deg 0deg"
+                    shadow-intensity="2" max-camera-orbit="auto 90deg auto" alt="Container Living"
+                    src="media/LegoRacerbil.glb" style="width:100%; height:250px;">
+                </model-viewer>
+            </div>
+        </section>
+
+        <section class="about-os">
+
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

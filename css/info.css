@@ -1,0 +1,18 @@
+.info-main__ul {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.info__list__item {
+    border-bottom: 1px solid black;
+}
+
+.info {
+    max-width: 330px;
+    margin-bottom: 5rem;
+}
+
+.info__text {
+    font-size: 15px;
+    margin-top: 10px;
+}
