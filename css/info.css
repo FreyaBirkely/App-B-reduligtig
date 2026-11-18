@@ -1,13 +1,16 @@
+.info__nav {
+    position: sticky;
+    top: 15%;
+}
+
 .info-main__ul {
     display: flex;
     margin: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .info__list__item {
     border-bottom: 1px solid black;
+    font-weight: 600;
 }
 
 .info {
