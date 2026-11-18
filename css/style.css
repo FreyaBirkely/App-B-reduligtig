@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 100px;
-    background: linear-gradient(130deg, #ffffff 0%, #7e8083 30%);
+    background: linear-gradient(130deg, #DECAD4 0%, #BAC7D6 100%);
     background-repeat: no-repeat;
 }
 
@@ -120,3 +121,5 @@ header {
         display: flex;
     }
 }
+
+ 

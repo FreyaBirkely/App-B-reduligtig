@@ -1,50 +1,115 @@
 .kontakt {
-    max-width: 330px;
-    margin: auto;
+    max-width: 460px;
+    margin: 40px auto 60px;
+    padding: 40px 32px;
+   
 }
 
-.kontakt__h1 {
-    font-size: 25px;
+.kontakt * {
+    max-width: none;
 }
 
-.field,
-.field__btn {
+.kontakt h1 {
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 32px;
+    padding: 0;
+}
+
+.kontakt form {
+    width: 100%;
+}
+
+.kontakt fieldset {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
+    width: 100%;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
-.form__input {
-    border: 1px solid black;
-    max-width: 330px;
-    height: 56px;
+.kontakt input,
+.kontakt textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #d5dcdb;
+    border-radius: 30px;
+    background: #fff;
+    font-family: «Inter», sans-serif;
+    font-size: 16px;
+    padding: 0 24px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form__textarea {
-    max-width: 330px;
-    height: 100px;
-    border: 1px solid black;
-    padding-top: 15px;
+.kontakt input {
+    height: 58px;
 }
 
-.send__btn {
-    max-width: 80px;
+.kontakt textarea {
+    height: 140px;
+    padding-top: 18px;
+    border-radius: 24px;
+    resize: none;
+}
+
+.kontakt input:focus,
+.kontakt textarea:focus {
+    border-color: #2e9e5b;
+    box-shadow: 0 0 0 4px rgba(46, 158, 91, 0.2);
+}
+
+.kontakt input::placeholder,
+.kontakt textarea::placeholder {
+    font-family: «Inter», sans-serif;
     font-size: 15px;
-    padding: 10px 20px;
+    color: #9aa3a2;
 }
 
-.placeholder {
-    font-size: 12px;
-    padding-left: 15px;
+.kontakt fieldset:last-of-type {
+    justify-items: center;
+    margin-top: 32px;
 }
 
-.form__input--red__border {
-    border: 3px solid red;
+.kontakt button {
+    width: auto;
+    margin: 0;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 999px;
+    background: #2e9e5b;
+    color: #fff;
+    font-family: «Inter», sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(46, 158, 91, 0.35);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
-.error__msg {
-    color: red;
-    font-size: 20px;
+.kontakt button {
+    padding: 15px 60px;
+    border-radius: 999px;
+    background: linear-gradient(#579486, #245E59);
+    color: white;
+    font-size: 17px;
+}
+.kontakt [class*=«redborder»],
+.kontakt [class*=«redborder»]:focus {
+    border: 2px solid #e53935;
+    box-shadow: none;
+}
+
+.kontakt #errorMsg {
+    color: #e53935;
+    font-size: 16px;
+    text-align: center;
     margin-top: 1rem;
 }
