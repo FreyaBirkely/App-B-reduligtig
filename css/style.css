@@ -71,9 +71,10 @@ header {
 .header__nav {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(172, 167, 167);
+    justify-content: center;
 }
 
 .header__ul {
@@ -105,16 +106,20 @@ header {
     .header__ul {
         display: none;
         position: absolute;
-        top: 100%;
-        right: 0;
+        top: 90%;
         flex-direction: column;
-        background-color: white;
+        background-color: rgb(172, 167, 167);
         border-bottom-left-radius: 30px;
-        height: 8em;
-        max-width: 6em;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 8.5rem;
+        width: 105px;
+        padding: 10px 15px;
         font-size: 20px;
         align-items: center;
         justify-content: center;
+        gap: 10px;
     }
 
     .header__ul--open {
