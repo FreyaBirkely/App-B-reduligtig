@@ -1,6 +1,9 @@
 .info-main__ul {
     display: flex;
     margin: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .info__list__item {
