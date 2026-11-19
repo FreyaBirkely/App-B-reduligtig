@@ -1,6 +1,11 @@
 .info__nav {
+<<<<<<< HEAD
     position: static;
     top: 15%;
+=======
+    position: sticky;
+    top: 20%;
+>>>>>>> 155dcf10eebc4b4671212c479c0f23714faf4f6d
 }
 
 .info-main__ul {
@@ -9,18 +14,32 @@
 }
 
 .info__list__item {
-    border-bottom: 1px solid black;
     font-weight: 600;
 }
 
+.info__list__item a {
+    padding: 8px 20px;
+    border-radius: 30px;
+    background: linear-gradient(#579486, #245E59);
+    color: white;
+}
+
 .info {
-    max-width: 330px;
+    max-width: 300px;
     margin-bottom: 5rem;
 }
 
+.info__h1 {
+    color: #579486;
+    font-size: 25px;
+}
+
 .info__text {
+    font-size: 13px;
+    margin-top: 8px;
     font-size: 15px;
     margin-top: 10px;
+<<<<<<< HEAD
 }
 
 main nav {
@@ -56,3 +75,6 @@ main nav a:hover {
     transform: translateY(-2px);
 }
 
+=======
+}
+>>>>>>> 155dcf10eebc4b4671212c479c0f23714faf4f6d
