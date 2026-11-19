@@ -45,12 +45,6 @@ h4,
 h5,
 h6 {
     font-family: "Sedgwick Ave Display", cursive;
-    background: -webkit-linear-gradient(#579486, #245E59);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #245E59;
-    -webkit-text-stroke-width: 0.2px;
-
 }
 
 p,
@@ -69,7 +63,7 @@ header {
 }
 
 .header__logo {
-    width: 100px;
+    width: 80px;
 }
 
 .header__nav {
@@ -89,7 +83,7 @@ header {
 
 .header__list__item {
     font-size: 15px;
-    
+
 }
 
 .header__toggle {
@@ -138,7 +132,3 @@ header a:hover {
         display: flex;
     }
 }
-
-
-
- 

@@ -14,11 +14,16 @@
 }
 
 .info {
-    max-width: 330px;
+    max-width: 300px;
     margin-bottom: 5rem;
 }
 
+.info__h1 {
+    color: #579486;
+    font-size: 25px;
+}
+
 .info__text {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 8px;
 }
