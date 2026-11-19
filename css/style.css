@@ -32,7 +32,7 @@ button {
 
 body {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 100px;
     background: linear-gradient(130deg, #DECAD4 0%, #BAC7D6 100%);
     background-repeat: no-repeat;
@@ -99,6 +99,22 @@ header a:hover {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 16px;
+    background: rgba(222, 202, 212, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+header img {
+    height: 80px;
+    width: auto;
 }
 
 

@@ -1,6 +1,6 @@
 .info__nav {
     position: sticky;
-    top: 15%;
+    top: 20%;
 }
 
 .info-main__ul {
@@ -9,8 +9,14 @@
 }
 
 .info__list__item {
-    border-bottom: 1px solid black;
     font-weight: 600;
+}
+
+.info__list__item a {
+    padding: 8px 20px;
+    border-radius: 30px;
+    background: linear-gradient(#579486, #245E59);
+    color: white;
 }
 
 .info {
@@ -26,4 +32,6 @@
 .info__text {
     font-size: 13px;
     margin-top: 8px;
+    font-size: 15px;
+    margin-top: 10px;
 }
