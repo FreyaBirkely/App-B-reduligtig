@@ -60,6 +60,9 @@ header {
     top: 0;
     z-index: 1000;
     margin-bottom: 1.5rem;
+    padding: 10px 16px;
+    background: rgba(222, 202, 212, 0.75);
+    border-radius: 0 0 20px 20px;
 }
 
 .header__logo {
@@ -93,31 +96,6 @@ header {
     font-size: 32px;
     cursor: pointer;
 }
-
-header a:hover {
-    background: linear-gradient(#579486, #245E59);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 16px;
-    background: rgba(222, 202, 212, 0.75);
-    backdrop-filter: blur(10px);
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-header img {
-    height: 80px;
-    width: auto;
-}
-
-
 
 @media (max-width: 500px) {
     .header__toggle {
