@@ -73,7 +73,7 @@ header {
     align-items: center;
     padding: 10px 15px;
     border-radius: 20px;
-    background-color: rgb(172, 167, 167);
+    background-color: rgb(255, 255, 255);
     justify-content: center;
 }
 
@@ -85,7 +85,7 @@ header {
 
 .header__list__item {
     font-size: 15px;
-    border-bottom: 1px solid black;
+    
 }
 
 .header__toggle {
@@ -95,6 +95,14 @@ header {
     font-size: 32px;
     cursor: pointer;
 }
+
+header a:hover {
+    background: linear-gradient(#579486, #245E59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 @media (max-width: 500px) {
@@ -126,5 +134,7 @@ header {
         display: flex;
     }
 }
+
+
 
  
