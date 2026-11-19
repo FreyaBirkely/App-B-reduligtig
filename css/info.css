@@ -22,3 +22,36 @@
     font-size: 15px;
     margin-top: 10px;
 }
+
+main nav {
+    position: sticky;
+    top: 125px;
+    z-index: 900;
+    margin-bottom: 20px;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: center !important;
+    gap: 12px;
+}
+
+main nav li {
+    border-bottom: none !important;
+}
+
+main nav a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 999px;
+    background: linear-gradient(#579486, #245E59);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(36, 94, 89, 0.3);
+    transition: transform 0.2s, filter 0.2s;
+}
+
+main nav a:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+}
