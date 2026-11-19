@@ -68,6 +68,10 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.header__logo {
+    width: 100px;
+}
+
 .header__nav {
     display: flex;
     align-items: center;
@@ -126,5 +130,3 @@ header {
         display: flex;
     }
 }
-
- 
