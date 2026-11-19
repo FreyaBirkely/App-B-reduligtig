@@ -74,7 +74,6 @@ header {
     align-items: center;
     padding: 10px 15px;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
     justify-content: center;
 }
 
@@ -106,9 +105,9 @@ header {
     .header__ul {
         display: none;
         position: absolute;
-        top: 90%;
+        top: 70%;
         flex-direction: column;
-        background-color: rgb(172, 167, 167);
+        background-color: rgba(222, 202, 212, 0.90);
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         border-top-left-radius: 10px;
