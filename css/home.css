@@ -32,3 +32,27 @@
 .about__text {
     font-size: 13px;
 }
+
+main img {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+main img {
+    transition: transform 0.3s;
+}
+
+main img:hover {
+    transform: scale(1.03);
+}
+
