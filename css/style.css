@@ -33,7 +33,6 @@ button {
 body {
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 100px;
     background: linear-gradient(130deg, #DECAD4 0%, #BAC7D6 100%);
     background-repeat: no-repeat;
 }
@@ -136,27 +135,16 @@ footer {
     text-align: center;
 }
 
-footer img {
-    height: 70px;
-    width: auto;
+.footer__logo {
+    width: 80px;
 }
 
-footer div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-footer a {
+.footer__link {
     font-size: 14px;
     color: #245E59;
 }
 
-footer a:hover {
-    color: #579486;
-}
-
-footer p {
+.footer__p {
     font-size: 12px;
-    color: #555;
+    color: rgba(0, 0, 0, 50%);
 }
